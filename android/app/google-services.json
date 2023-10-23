@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "941727919812",
+    "project_id": "fetchapiproject-3b7a4",
+    "storage_bucket": "fetchapiproject-3b7a4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:941727919812:android:a389f1e0d36b2adbc0a391",
+        "android_client_info": {
+          "package_name": "com.reactsagafirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDY74o0MDonO01FMOq_kqmr7uxRuS42kF8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
