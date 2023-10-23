@@ -8,7 +8,7 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import styles from './style';
-import * as ImagePicker from 'react-native-image-picker';
+//import * as ImagePicker from 'react-native-image-picker';
 import {PersistanceHelper} from '../../helpers';
 import {useDispatch} from 'react-redux';
 import {userActions} from '../../features/user/userSlice';
@@ -52,25 +52,23 @@ const UserProfileScreen = () => {
     //     setImage('../Images/image2');
     //   }
     // });
-
-    ImagePicker.launchImageLibrary(
-      {mediaType: 'photo', includeBase64: false, maxHeight: 200, maxWidth: 200},
-      response => {
-        console.log('Response = ', response);
-
-        if (response.didCancel) {
-          console.log('User cancelled image picker');
-        } else if (response.error) {
-          console.log('ImagePicker Error: ', response.error);
-        } else {
-          setImage({uri: response});
-          // source = {
-          //   uri: 'data:image/jpeg;base64,' + response.data,
-          //   isStatic: true,
-          // };
-        }
-      },
-    );
+    // ImagePicker.launchImageLibrary(
+    //   {mediaType: 'photo', includeBase64: false, maxHeight: 200, maxWidth: 200},
+    //   response => {
+    //     console.log('Response = ', response);
+    //     if (response.didCancel) {
+    //       console.log('User cancelled image picker');
+    //     } else if (response.error) {
+    //       console.log('ImagePicker Error: ', response.error);
+    //     } else {
+    //       setImage({uri: response});
+    //       // source = {
+    //       //   uri: 'data:image/jpeg;base64,' + response.data,
+    //       //   isStatic: true,
+    //       // };
+    //     }
+    //   },
+    // );
   };
 
   const handleSave = async () => {
